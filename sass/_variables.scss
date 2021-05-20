@@ -1,0 +1,40 @@
+// general
+$bodyMaxWidth: 1680px;
+$first-font-color: #333;
+$second-font-color: #ffdf59;
+$first-font-family: 'Open Sans', sans-serif;
+$second-font-family: 'Montserrat', sans-serif;
+
+// section margins
+$sectionTopMargin: 50px;
+$sectionBottomMargin: 50px;
+$sectionTopPadding: 50px;
+$sectionBottomPadding: 50px;
+
+
+// section titles, subtitles and main descriptions
+$sectionTitleFontSize: 50px;
+$sectionTitleMargin: 50px auto;
+$sectionTitleFontFamily: $first-font-family, sans-serif;
+$mediaSectionTitleFontSize: 40px;
+
+$sectionSubtitleFontSize: 34px;
+$sectionSubtitleMargin: 30px auto;
+$sectionSubtitleFontFamily: $first-font-family, sans-serif;
+$mediaSectionSubtitleFontSize: 30px;
+
+$sectionDescriptionFontSize: 22px;
+$sectionDescriptionMargin: 30px auto;
+$sectionDescriptionFontFamily: $second-font-family, sans-serif;
+$sectionDescriptionLineHeight: 200%;
+
+// normal titles, subtitles and descriptions
+$titleFontSize: 23px;
+$titleFontFamily: $first-font-family, sans-serif;
+
+$subtitleFontSize: 22px;
+$subtitleFontFamily: $first-font-family, sans-serif;
+
+$descriptionFontSize: 20px;
+$descriptionFontFamily: $second-font-family, sans-serif;
+$descriptionLineHeight: 180%;

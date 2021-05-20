@@ -1,0 +1,106 @@
+.slider {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  margin: 0 auto;
+  margin-top: $sectionTopMargin *2;
+  margin-top: $sectionBottomMargin *2;
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 1px 1px 8px $first-font-color;
+      border-radius: 6px;
+      .slide__title {
+          width: 100%;
+          background-color: rgba($color: #000000, $alpha: .7);
+          color: white;
+          padding: 20px 0;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: $sectionSubtitleFontSize;
+          letter-spacing: 2px;
+      }
+  }
+  .slide-1 {
+      background-image: url('../img/img-hero/people_640px.jpg');
+      animation: changeFirstSlide 8s infinite;
+  }
+  .slide-2 {
+      background-image: url('../img/img-hero/team_1280.jpg');
+      animation: changeSecondSlide 8s infinite;
+      }
+  .slide-3 {
+      background-image: url('../img/img-hero/light_640px.jpg');
+      animation: changeThirdSlide 8s infinite;
+  }
+}
+
+@keyframes changeFirstSlide {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+
+    }
+    30% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes changeSecondSlide {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+
+    }
+
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes changeThirdSlide {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

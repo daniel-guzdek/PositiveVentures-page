@@ -1,0 +1,87 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .hero__image-title-container {
+        width: 50%;
+        margin: 50px auto;
+        margin-top: 150px;
+        z-index: 1;
+        .hero__image-title {
+            width: 100%;
+            transform: scale(0);
+            transition: .5s;
+        }
+        // adding class after scroll
+        .hero__image-title.show-hero-image-title {
+            transform: scale(1);
+        }
+    }
+    .hero__slogan {
+        text-align: center;
+        font-size: $sectionSubtitleFontSize;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        transform: scale(0);
+        opacity: 0;
+        z-index: 1;
+    }
+    // adding class after scroll
+    .hero__slogan.show-hero-slogan {
+        transform: scale(1);
+        opacity: 1;
+        transition: .5s;
+    }
+    .hero__description {
+        display: block;
+        height: 100px;
+        text-align: center;
+        padding-bottom: $sectionTitleMargin;
+        margin-bottom: 100px;
+        font-size: 22px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: .5s;
+        z-index: 1;
+    }
+    .hero__description.show-description {
+        font-size: 24px;
+        transform: rotate(720deg);
+    }
+    .hero__background-image-1, .hero__background-image-2 {
+        position: absolute;
+    }
+    .hero__background-image-1 {
+        width: 30%;
+        left: -200%;
+        top: 50%;
+        opacity: 0;
+        transition: 2s;
+        .hero__bg-image-1 {
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    .hero__background-image-1.show-hero-bg-image-1 {
+        opacity: 1;
+        left: 5%;
+        top: 5%;
+    }
+    .hero__background-image-2 {
+        width: 50%;
+        transform: rotate(60deg);
+        left: 50%;
+        z-index: 0;
+        .hero__bg-image-2 {
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}
+
+.hero-title-container.show-logo-title {
+    opacity: 1;
+}

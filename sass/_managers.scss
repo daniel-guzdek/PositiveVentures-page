@@ -1,0 +1,77 @@
+.managers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    margin-top: $sectionTopMargin;
+    .managers__main-title {
+        @include sectionTitle;
+    }
+    .managers__content-conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 5%;
+        margin-right: 5%;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
+        .manager__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 30%;
+            min-width: 250px;
+            max-width: 500px;
+            min-height: 500px;
+            padding: 10px;
+            padding-bottom: 0;
+            @media (max-width: 1086px) {
+                flex-basis: 80%;
+            }
+            .manager__photo-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30%;
+                min-height: 300px;
+                overflow: hidden; 
+                margin: 0 auto;
+                .manager__photo {
+                    display: block;
+                    height: 100%;
+                    margin: 0 auto;  
+                } 
+            }
+            .manager__title-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10%;
+                @include normalTitle;
+            }
+            .manager__subtitle-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                height: 10%;
+                @include normalSubtitle;
+                color: gold;
+            }
+            .manager__description-container {
+                height: 80%;
+                margin-top: 30px;
+                @include normalDescription;
+                padding: 20px 15px 0 15px;
+                line-height: 180%;
+            }
+        }
+    }
+}

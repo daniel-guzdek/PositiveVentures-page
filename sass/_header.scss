@@ -1,0 +1,18 @@
+header {
+    background-color: black;
+    margin-top: 60px;
+    @media (orientation: landscape) {
+        position: relative;
+        min-height: calc(100vh - 60px);
+    }
+    .header__video {
+        z-index: 1;
+        width: 100%;
+        @media (orientation: landscape) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
