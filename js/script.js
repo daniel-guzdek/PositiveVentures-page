@@ -12,6 +12,12 @@ const work = document.querySelector('.work');
 const pricing = document.querySelector('.pricing');
 const contact = document.querySelector('.contact');
 
+// handling loader
+window.addEventListener('load', () => {
+    const preload = document.querySelector('.loader');
+    preload.classList.add('loader-finish');
+})
+
 // set navigation after scroll
 window.addEventListener('scroll', function(){
     nav.classList.toggle('sticky', window.scrollY > 0);
