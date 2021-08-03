@@ -30,7 +30,7 @@
             padding: 10px;
             padding-bottom: 0;
             @media (max-width: 1086px) {
-                flex-basis: 80%;
+                flex-basis: 90%;
             }
             .manager__photo-container {
                 display: flex;
@@ -56,6 +56,9 @@
                 align-items: center;
                 height: 10%;
                 @include normalTitle;
+                @media(max-width: 300px) {
+                    font-size: 20px;
+                }
             }
             .manager__subtitle-container {
                 display: flex;
@@ -64,6 +67,9 @@
                 height: 10%;
                 @include normalSubtitle;
                 color: gold;
+                @media(max-width: 300px) {
+                    font-size: 16px;
+                }
             }
             .manager__description-container {
                 height: 80%;
@@ -71,6 +77,10 @@
                 @include normalDescription;
                 padding: 20px 15px 0 15px;
                 line-height: 180%;
+                @media(max-width: 300px) {
+                    font-size: 15px;
+                    margin: 20px 30px;
+                }
             }
         }
     }

@@ -17,6 +17,9 @@
         @media (max-width: 640px) {
             font-size: 32px;
         }
+        @media (max-width: 640px) {
+            font-size: 25px;
+        }
     }
     .contact__wrapper {
         display: flex;
@@ -41,7 +44,6 @@
                 margin-bottom: 30px;
             }
             .label-block {
-                min-width: 300px;
                 width: 60%;
                 margin-top: 20px;
                 margin-bottom: 7px;
@@ -53,7 +55,6 @@
                 }
             }
             input, textarea, button {
-                min-width: 300px;
                 width: 60%;
                 height: 30px;
                 margin: 0;
@@ -128,7 +129,6 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                min-width: 300px;
                 width: 60%;
                 height: 70px;
                 background-color: lighten($color: $second-font-color, $amount: 20%);
